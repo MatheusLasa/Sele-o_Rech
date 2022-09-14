@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "cc97d0ff-28c3-4d6a-ab58-140faa30a4c5",
+		"name": "Estacionamento Endpoints",
+		"description": "The Salesforce Platform APIs collection contains 230+ requests for the following Salesforce APIs:\n\n<table><tbody><tr><td>Async Query<br>Auth<br>Bulk (v1 &amp; v2)<br>Composite<br>Connect (Chatter)<br>CPQ<br>Einstein Prediction Service</td><td>GraphQL<br>Metadata<br>Rest<br>Tooling<br>UI</td></tr></tbody></table>\n\n**⚠️ Disclaimers:**\n\n*   This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.\n*   API documentation is not provided with the collection. Please refer to the [official documentation](https://developer.salesforce.com/docs).\n    \n\nℹ️ Report issues and ask questions [here](https://github.com/forcedotcom/postman-salesforce-apis/issues).\n\n## Get started\n\nFollow [this documentation](https://github.com/forcedotcom/postman-salesforce-apis) to get started with the collection.\n\n## Variables Reference\n\nThe collection relies on the following variables:\n\n| Variable | Description |\n| --- | --- |\n| `url` | The base URL for all requests. Either:  <br>\\- `https://test.salesforce.com` for sandboxes or Scratch orgs  <br>\\- `https://login.salesforce.com` for production, Trailhead Playground and Developer Edition orgs  <br>\\- your custom My Domain base URL. |\n| `version` | The Salesforce API version (e.g.: 50.0). |\n| `username` | Your username. |\n| `password` | Your password. |\n| `secretToken` | Your personal [security token](https://help.salesforce.com/articleView?id=user_security_token.htm). |\n| `clientId` | Connected App client Id. |\n| `clientSecret` | Connected App client secret. |\n| `redirectUrl` | Connected App redirect URL for OAuth 2.0. |\n| `initAccessToken` | Initial access token for dynamic Connected App registration. |\n| `site` | Community suffix when connecting with an Experience Cloud user. |\n\nOnly a few of these variables are mandatory. The authentication requests will automatically register and set extra \"private\" variables identified with a `_` prefix (e.g.: `_accessToken`, `_endpoint`, `_orgId`, `_userId`...).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23226951"
+	},
+	"item": [
+		{
+			"name": "Listar Pessoas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estacionamento/listarPessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacionamento",
+						"listarPessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Veiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estacionamento/listarPessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacionamento",
+						"listarPessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Veiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estacionamento/listarPessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacionamento",
+						"listarPessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Vaga",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estacionamento/listarPessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacionamento",
+						"listarPessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar pessoa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estacionamento/listarPessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacionamento",
+						"listarPessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar veiculo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/estacionamento/listarPessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacionamento",
+						"listarPessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar pessoas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"matheus\",\r\n    \"cpf\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar veiculos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"matheus\",\r\n    \"cpf\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/estacionamento Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroVaga\": \"100\",\r\n    \"placa\": \"jas4e70\",\r\n    \"modelo\": \"pace\",\r\n    \"marca\": \"jaguar\",\r\n    \"ano\": \"2022\",\r\n    \"nome_proprietario\": \"Matheus\"\r\n    \"apartamento\": \"10\"\r\n    \"bloco\": \"a\"\r\n    \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/estacionamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacionamento"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "tokenName",
+				"value": "access_token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": true,
+				"type": "boolean"
+			},
+			{
+				"key": "scope",
+				"value": "api",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "implicit",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{clientSecret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{clientId}}",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "{{url}}{{site}}/services/oauth2/authorize",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "{{url}}{{site}}/services/oauth2/token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// Specifying Postman as the client for Salesforce logs ",
+					"pm.request.headers.add({key: 'Sforce-Call-Options', value: 'client=postman' });",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://login.salesforce.com",
+			"type": "string"
+		},
+		{
+			"key": "version",
+			"value": "55.0"
+		},
+		{
+			"key": "username",
+			"value": ""
+		},
+		{
+			"key": "password",
+			"value": ""
+		},
+		{
+			"key": "secretToken",
+			"value": ""
+		},
+		{
+			"key": "clientId",
+			"value": "3MVG98_Psg5cppyYCmk1gZNC25o00SXpgpodlS29IZ6pXiHkt3xuPa5qIjBTtEgdsiMuIWVN_8F0jnwEtbDh4"
+		},
+		{
+			"key": "clientSecret",
+			"value": ""
+		},
+		{
+			"key": "redirectUrl",
+			"value": ""
+		},
+		{
+			"key": "initAccessToken",
+			"value": ""
+		},
+		{
+			"key": "site",
+			"value": ""
+		},
+		{
+			"key": "_accessToken",
+			"value": ""
+		},
+		{
+			"key": "_endpoint",
+			"value": ""
+		},
+		{
+			"key": "_userId",
+			"value": ""
+		},
+		{
+			"key": "_orgId",
+			"value": ""
+		},
+		{
+			"key": "_jobId",
+			"value": ""
+		},
+		{
+			"key": "webstoreId",
+			"value": ""
+		}
+	]
+}
